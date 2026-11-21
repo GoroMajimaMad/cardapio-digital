@@ -1,0 +1,15 @@
+# Ambiente virtual Python
+backend/venv/
+venv/
+__pycache__/
+*.pyc
+
+# Senha do seu MySQL local
+backend/.env
+.env
+
+# Arquivos temporários do sistema/editor
+.DS_Store
+Thumbs.db
+
+iniciar_api.bat

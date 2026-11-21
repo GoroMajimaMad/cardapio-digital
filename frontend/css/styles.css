@@ -1,0 +1,178 @@
+:root {
+  --cm-purple: #5b216b;
+  --cm-purple-dark: #3f144b;
+  --cm-pink: #e94e89;
+  --cm-pink-soft: #fde8f0;
+  --cm-cream: #fff9fb;
+  --cm-gold: #f59e0b;
+}
+
+body {
+  background-color: var(--cm-cream);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: #2d2233;
+}
+
+.cm-navbar {
+  background: linear-gradient(135deg, var(--cm-purple-dark), var(--cm-purple));
+  box-shadow: 0 4px 16px rgba(63, 20, 75, 0.18);
+}
+
+.cm-hero {
+  background: linear-gradient(135deg, rgba(91, 33, 107, 0.94), rgba(233, 78, 137, 0.88));
+  color: #fff;
+  border-radius: 1.25rem;
+  padding: 2rem;
+  box-shadow: 0 10px 28px rgba(91, 33, 107, 0.18);
+}
+
+.category-pill {
+  border: 2px solid #ead8ee;
+  background-color: #fff;
+  color: var(--cm-purple);
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.5rem 1.15rem;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.category-pill:hover,
+.category-pill.active {
+  background: linear-gradient(135deg, var(--cm-purple), var(--cm-pink));
+  border-color: transparent;
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(233, 78, 137, 0.25);
+}
+
+.product-card {
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  background: #fff;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 26px rgba(91, 33, 107, 0.14);
+}
+
+.product-img-wrapper {
+  height: 190px;
+  overflow: hidden;
+  background-color: var(--cm-pink-soft);
+  position: relative;
+}
+
+.product-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.price-tag {
+  color: var(--cm-purple);
+  font-weight: 800;
+  font-size: 1.15rem;
+}
+
+.btn-cm-primary {
+  background: linear-gradient(135deg, var(--cm-purple), var(--cm-pink));
+  border: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn-cm-primary:hover {
+  background: linear-gradient(135deg, var(--cm-purple-dark), #d43c77);
+  color: #fff;
+}
+
+.cart-fab {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 1030;
+  border-radius: 999px;
+  padding: 0.85rem 1.35rem;
+  box-shadow: 0 10px 25px rgba(91, 33, 107, 0.35);
+}
+
+/* Status badges & Stepper */
+.status-badge-Recebido { background-color: #0d6efd; color: #fff; }
+.status-badge-Em-preparo { background-color: #f59e0b; color: #1f1600; }
+.status-badge-Pronto { background-color: #198754; color: #fff; }
+.status-badge-Entregue { background-color: #6c757d; color: #fff; }
+.status-badge-Cancelado { background-color: #dc3545; color: #fff; }
+
+.order-stepper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 1rem 0 0.5rem;
+}
+
+.order-stepper::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 8%;
+  right: 8%;
+  height: 3px;
+  background: #e9ecef;
+  z-index: 0;
+}
+
+.step-item {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  flex: 1;
+}
+
+.step-dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e9ecef;
+  color: #6c757d;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.step-item.completed .step-dot {
+  background: var(--cm-purple);
+  color: #fff;
+}
+
+.step-item.current .step-dot {
+  background: var(--cm-pink);
+  color: #fff;
+  box-shadow: 0 0 0 5px rgba(233, 78, 137, 0.22);
+}
+
+/* Destaque para pedido recém-chegado no Admin */
+@keyframes pulseHighlight {
+  0% { background-color: #fff3cd; }
+  50% { background-color: #ffe69c; }
+  100% { background-color: #ffffff; }
+}
+
+.new-order-flash {
+  animation: pulseHighlight 2.6s ease-in-out 2;
+  border-left: 5px solid var(--cm-pink) !important;
+}
+
+.ws-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
