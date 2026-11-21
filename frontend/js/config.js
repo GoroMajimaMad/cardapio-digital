@@ -1,5 +1,5 @@
 // Endereço do servidor backend Flask + SocketIO
-const API_BASE_URL = "http://127.0.0.1:5000";
+const API_BASE_URL = "https://cardapio-digital-api-uxry.onrender.com";
 
 function formatBRL(value) {
   return Number(value || 0).toLocaleString("pt-BR", {
