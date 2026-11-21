@@ -8,10 +8,10 @@ Aplicação web distribuída de **Cardápio Digital** desenvolvida para a sorvet
 
 O backend (API REST + WebSocket) e o banco de dados MySQL já estão hospedados na nuvem, permitindo testar a aplicação diretamente pelo navegador sem precisar instalar Python ou MySQL:
 
-* **Cardápio do Cliente:** `https://GoroMajimaMad.github.io/cardapio-digital/frontend/index.html`
+* **Cardápio do Cliente:** `https://GoroMajimaMad.github.io/cardapio-digital`
 * **Painel Administrativo:** `https://GoroMajimaMad.github.io/cardapio-digital/frontend/admin.html`
-* **Documentação da API (Swagger):** `https://-------.onrender.com/apidocs/`
-* **Status da API (Health Check):** `https://--------.onrender.com/api/health`
+* **Documentação da API (Swagger):** `https://cardapio-digital-api-uxry.onrender.com/apidocs/`
+* **Status da API (Health Check):** `https://cardapio-digital-api-uxry.onrender.com/api/health`
 
 ### 🔐 Credenciais do Painel Administrativo
 * **E-mail:** `admin@carolmix.com`
@@ -20,7 +20,6 @@ O backend (API REST + WebSocket) e o banco de dados MySQL já estão hospedados 
 ---
 
 ## ⚡ Como Testar
-
 
 1. Abra o **Cardápio do Cliente** em uma aba e o **Painel Administrativo** em outra (faça login com as credenciais acima).
 2. Na aba do cliente, clique em qualquer produto, escolha tamanho/adicionais, adicione ao carrinho e finalize o pedido informando seu nome e mesa/retirada.
