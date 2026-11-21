@@ -21,6 +21,7 @@ O backend (API REST + WebSocket) e o banco de dados MySQL já estão hospedados 
 
 ## ⚡ Como Testar
 
+
 1. Abra o **Cardápio do Cliente** em uma aba e o **Painel Administrativo** em outra (faça login com as credenciais acima).
 2. Na aba do cliente, clique em qualquer produto, escolha tamanho/adicionais, adicione ao carrinho e finalize o pedido informando seu nome e mesa/retirada.
 3. Na aba do administrador, o pedido aparecerá **instantaneamente** no topo da lista com destaque visual, notificação e alerta sonoro.
